@@ -1,0 +1,207 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: rgb(1,0,0);
+background: linear-gradient(180deg, rgba(1,0,0,1) 37%, rgba(0,255,243,1) 83%, rgba(250,250,250,1) 99%);
+}
+
+
+header {
+    background-color: #000000;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+header .logo {
+    position: absolute;
+    left: 20px;
+}
+
+header .logo img {
+    width: 175px;
+}
+
+header h1 {
+    font-size: 3.5em;
+}
+
+h2{
+    font-size: 3em;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 25px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+main {
+    text-align: center;
+    padding: 0px;
+}
+
+main * p {
+    margin-top: 10px auto;
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: justify;
+    padding: 20px;
+}
+
+.main-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner {
+    width: 100%;
+    overflow: hidden;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+    display: block;
+}
+
+.content {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.content p {
+    margin: 0 10px;
+}
+
+.destinos {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+
+.destino {
+    padding: 10px;
+    margin: 20px 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.destino img {
+    width: 100%;
+    max-height: 350px;
+    display: block;
+}
+
+.destino h3 {
+    margin: 10px 0 5px 0;
+    font-weight: bold;
+}
+
+.destino p {
+    margin-top: 10px;
+    text-align: left;
+}
+
+.sidebar {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.info-box {
+    border: 2px solid black;
+    padding: 10px;
+    margin: 30px 20px;
+    text-align: left;
+}
+
+
+
+.video-container {
+    width: 100%;
+    height: 70vh;
+    background: rgb(0, 0, 0);
+  }
+  
+  .video-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Asegura que el video cubra el contenedor sin distorsionarse */
+
+
+    border-top-left-radius: 50px; /* Ajusta el radio según tus necesidades */
+    border-top-right-radius: 50px; /* Ajusta el radio según tus necesidades */
+    z-index: 2;
+  }
+
+
+  
+
+
+
+
+
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70vh;
+  }
+  
+  .lorem-ipsum {
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+    color: #333;
+    padding: 20px;
+    text-align: justify;
+    width: 50%;
+  }
+  
+  .circle-container {
+    width: 30%;
+    height: 80%;
+    border-radius: 50%;
+    border: 20px solid rgba(0,255,243,1) ;
+    background-color: #f7f7f7;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+  
+  .circle-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
