@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Cotizaciones</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="logo.png" alt="Logo">
+            </div>
+            <h1>Cotiza tu Viaje Ahora!</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="destinos.html">Destinos</a></li>
+                <li><a href="#">Quienes Somos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="form-container">
+            <h2>Solicita tu Cotización</h2>
+            <form>
+                <div class="form-group">
+                    <input type="text" id="name" name="name" placeholder="Nombre"  class = "form-input">
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" placeholder="Correo Electrónico" class = "form-input">
+                </div>
+                <div class="form-group">
+                    <input type="text" id="phone" name="phone" placeholder="Teléfono" class = "form-input">
+                </div>
+                <div class="form-group">
+                    <textarea id="details" name="details" rows="4" placeholder="Detalles de la cotización" class = "form-input" style="resize: none;"></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
