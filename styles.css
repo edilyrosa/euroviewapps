@@ -12,6 +12,9 @@ body {
     background: rgb(1,0,0);
 }
 
+h1,h2,h3{
+    text-align: center;
+}
 
 header {
     background-color: #000000;
@@ -329,10 +332,14 @@ button:hover {
 
 /* 
 PARRAFOS QUE APARECEN CON SCROLL DOWN */
+p.hidden-reveal {
+    text-align: justify;
+}
 .hidden-reveal {
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+    text-align: justify;
 }
 
 .visible-reveal {
@@ -353,6 +360,7 @@ PARRAFOS QUE APARECEN CON SCROLL DOWN */
     justify-content: center;
 }
 
+/* 
 .social-icons {
     margin-bottom: 5px;
 }
@@ -361,11 +369,23 @@ PARRAFOS QUE APARECEN CON SCROLL DOWN */
     display: inline-block;
     margin: 0 10px;
     font-size: 24px;
-    color: #ada17b; /* Color de los iconos */
+    color: #ada17b; 
     transition: color 0.3s ease;
-}
+} 
+*/
 
-.social-icon:hover {
+
+.redes-sociales a {
+    color: #ada17b;
+    font-size: 24px;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+  .redes-sociales a:hover {
+    opacity: 0.8;
+  }
+
+.redes-sociales a:hover {
     color: #ffd700; /* Cambia el color al pasar el mouse */
 }
 
@@ -403,4 +423,15 @@ PARRAFOS QUE APARECEN CON SCROLL DOWN */
     width: 90%; /* La imagen ocupará el 90% del ancho del contenedor */
     height: auto; /* Mantener la proporción de la imagen */
     box-shadow: 1rem 1rem 2rem #e0591a; /* Sombra alrededor de la imagen */
+}
+
+.large-image{
+    width: 90%; /* La imagen ocupará el 90% del ancho del contenedor */
+    height: 90vh; /* Mantener la proporción de la imagen */
+    box-shadow: 1rem 1rem 2rem #048117; /* Sombra alrededor de la imagen */
+}
+.somos-image{
+    width: 95%; /* La imagen ocupará el 90% del ancho del contenedor */
+    height: 90vh; /* Mantener la proporción de la imagen */
+    box-shadow: 1rem 1rem 2rem #0477ea; /* Sombra alrededor de la imagen */
 }
