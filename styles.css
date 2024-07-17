@@ -435,3 +435,14 @@ p.hidden-reveal {
     height: 90vh; /* Mantener la proporción de la imagen */
     box-shadow: 1rem 1rem 2rem #0477ea; /* Sombra alrededor de la imagen */
 }
+
+.form-group label{
+    text-align: left;
+    display: block;
+    color: #888;
+}
+
+.form-input::placeholder {
+    color: #888; /* Color gris claro */
+    opacity: 1; /* Para asegurar que el color se aplica en todos los navegadores */
+}
