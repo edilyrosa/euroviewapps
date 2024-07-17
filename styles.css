@@ -335,3 +335,14 @@ ooter.footer-grid {
     font-size: 0.9em;
     color: #ccc;
 }
+
+.form-group label{
+    text-align: left;
+    display: block;
+    color: #888;
+}
+
+.form-input::placeholder {
+    color: #888; /* Color gris claro */
+    opacity: 1; /* Para asegurar que el color se aplica en todos los navegadores */
+}
