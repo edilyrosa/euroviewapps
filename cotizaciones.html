@@ -25,7 +25,7 @@
     </header>
     <main>
         <div class="form-container">
-            <h2>Solicita tu Cotización</h2>
+            <h2 style="color: rgba(0, 0, 0, 0.8);">Solicita tu Cotización</h2>
             <form>
                 <div class="form-group">
                     <input type="text" id="name" name="name" placeholder="Nombre"  class = "form-input">
@@ -36,6 +36,49 @@
                 <div class="form-group">
                     <input type="text" id="phone" name="phone" placeholder="Teléfono" class = "form-input">
                 </div>
+                
+
+
+                <div class="form-group">
+                    <label for="destino">Destino</label>
+                    <select id="destino" name="destino" class="form-input">
+                        <option value="bora-bora">Bora Bora</option>
+                        <option value="budapest">Budapest</option>
+                        <option value="tibet">El Tíbet</option>
+                        <option value="edimburgo">Edimburgo</option>
+                        <option value="paris">París</option>
+                        <option value="tokio">Tokio</option>
+                        <option value="sydney">Sídney</option>
+                        <option value="nueva-york">Nueva York</option>
+                        <option value="rio-de-janeiro">Río de Janeiro</option>
+                        <option value="bali">Bali</option>
+                        <option value="roma">Roma</option>
+                        <option value="londres">Londres</option>
+                        <option value="ciudad-del-cabo">Ciudad del Cabo</option>
+                        <option value="bangkok">Bangkok</option>
+                        <option value="dubai">Dubái</option>
+                        <option value="venecia">Venecia</option>
+                        <option value="atenas">Atenas</option>
+                        <option value="hong-kong">Hong Kong</option>
+                        <option value="toronto">Toronto</option>
+                        <option value="barcelona">Barcelona</option>
+                    </select>
+                </div>
+
+
+
+                <div class="form-group"> 
+                    <label for="fecha-salida">Fecha de salida</label>
+                    <input type="date" id="fecha-salida" name="fecha-salida" class = "form-input">
+                    <br>
+                </div>
+
+                <div class="form-group">
+                    <label for="fecha-final">Fecha de retorno</label>
+                    <input type="date" id="fecha-final" name="fecha-final" class = "form-input">
+                    <br>
+                </div>
+
                 <div class="form-group">
                     <textarea id="details" name="details" rows="4" placeholder="Detalles de la cotización" class = "form-input" style="resize: none;"></textarea>
                 </div>
@@ -45,5 +88,42 @@
             </form>
         </div>
     </main>
+    <footer class="footer-grid">
+        <div class="footer-container">
+            <div class="footer-column about">
+                <h4>Sobre Nosotros</h4>
+                <ul>
+                    <li><a href="#">Quiénes Somos</a></li>
+                    <li><a href="#">Nuestra Historia</a></li>
+                    <li><a href="#">Testimonios</a></li>
+                </ul>
+            </div>
+            <div class="footer-column services">
+                <h4>Servicios</h4>
+                <ul>
+                    <li><a href="#">Destinos Populares</a></li>
+                    <li><a href="#">Paquetes de Viaje</a></li>
+                    <li><a href="#">Consultoría de Viajes</a></li>
+                </ul>
+            </div>
+            <div class="footer-column contact">
+                <h4>Contáctanos</h4>
+                <ul>
+                    <li><a href="#">Formulario de Contacto</a></li>
+                    <li><a href="#">Ubicación</a></li>
+                    <li><a href="#">Teléfono</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Envoyage. Todos los derechos reservados.</p>
+        </div>
+    </footer>
 </body>
 </html>

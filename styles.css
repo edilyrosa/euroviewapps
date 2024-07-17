@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -253,34 +259,71 @@ button:hover {
 }
 
 
+/* EL FOOTER */
+
+.footer {
+    background-color: #333;
+    color:#ada17b;
+    margin-top: 100px;
+    text-align: center;
+    height: 15vh; /* Altura del footer */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.social-icons {
+    margin-bottom: 5px;
+}
+
+.social-icon {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 24px;
+    color: #ada17b; /* Color de los iconos */
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #ffd700; /* Cambia el color al pasar el mouse */
+}
+
+.copyright {
+    font-size: 14px;
+    margin-top: 10px;
+}
 
 
 
+/* IMAGENES PRINCIPALES CENTRADAS */
 
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Ancho del contenedor */
+}
 
+.image-container img {
+    margin: 0 auto;
+    width: 70vw; /* La imagen ocupará el 90% del ancho del contenedor */
+    height: auto; /* Mantener la proporción de la imagen */
+}
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Altura del contenedor, ajusta según tus necesidades */
+    width: 100%; /* Ancho del contenedor */
+    margin: 20px;
+}
 
+.shadowed-image {
+    width: 90%; /* La imagen ocupará el 90% del ancho del contenedor */
+    height: auto; /* Mantener la proporción de la imagen */
+    box-shadow: 1rem 1rem 2rem #e0591a; /* Sombra alrededor de la imagen */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
 
 
 
