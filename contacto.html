@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactanos</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="./assets/descarga.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<style>
+    .modal {
+        display: none;
+        position: fixed;
+        z-index:
+            1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    .modal-content {
+        background-color: #fefefe;
+        margin: 15% auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%;
+    }
+
+    .close-modal {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    .close-modal:hover,
+    .close-modal:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+</style>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="./assets/logo2.png" alt="Logo">
+            </div>
+            <h1>Contacta con nosotros Ahora!</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="somos.html">Quienes Somos</a></li>
+                <li><a href="destinos.html">Destinos</a></li>
+                <li><a href="cotizaciones.html">Contizaciones</a></li>
+                <li><a href="contacto.html">Contactanos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <br />
+        <br />
+        <div class="form-container">
+            <h2>Contáctanos</h2>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" class="form-input" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" class="form-input" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensaje:</label>
+                    <textarea id="message" name="message" rows="4" class="form-input" required></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Enviar</button>
+                </div>
+            </form>
+        </div>
+        <div id="modalExito" class="modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <h2>¡Gracias por tu solicitud, <span id="nombreUsuario"></span>!</h2>
+                <p>En breves te contactaremos a tu correo <span id="correoUsuario"></span>, para confirmar tu
+                    cotización.</p>
+            </div>
+        </div>
+
+    </main>
+    <footer class="footer">
+
+        <div class="redes-sociales">
+            <a href="https://facebook.com/tu-pagina" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com/tu-usuario" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com/tu-usuario" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://linkedin.com/in/tu-perfil" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+
+        <div class="copyright">
+            &copy; 2024 Envoyage. Todos los derechos reservados.
+        </div>
+        </div>
+    </footer>
+    <script>
+        const formulario = document.querySelector('form');
+        const modal = document.getElementById('modalExito');
+        const nombreUsuario = document.getElementById('nombreUsuario');
+        const correoUsuario = document.getElementById('correoUsuario');
+
+        document.querySelector('form').addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            const nombre = document.getElementById('name').value;
+            const correo = document.getElementById('email').value;
+            nombreUsuario.textContent = nombre;
+            correoUsuario.textContent = correo;
+
+            var modal = document.getElementById("modalExito");
+
+            modal.style.display = "block";
+
+            var span = document.getElementsByClassName("close-modal")[0];
+            span.onclick = function () {
+                modal.style.display = "none";
+            }
+
+            window.onclick = function (event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        });
+
+    </script>
+</body>
+
+</html>
