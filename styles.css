@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -260,4 +266,72 @@ PARRAFOS QUE APARECEN CON SCROLL DOWN */
 .visible-reveal {
     opacity: 1;
     transform: translateY(0);
+}
+
+ooter.footer-grid {
+    display: block;
+    gap: 20px;
+    padding: 40px 20px;
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo semi-transparente para complementar el degradado del fondo */
+    color: #f7f7f7; /* Color de texto claro para contraste */
+    text-align: center; /* Centrar el texto */
+    margin-top: 20px; /* Separar del contenido superior */
+    border-top: 2px solid rgba(0,255,243,1); /* Línea superior acorde a los colores del degradado */
+    width: 100%;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px 20px;
+}
+
+.footer-column h4 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.footer-column ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: #f7f7f7; /* Color de texto claro para contraste */
+    text-decoration: none;
+    font-size: 1em;
+    transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+    color: rgba(0,255,243,1); /* Color de enlace al pasar el cursor, acorde al degradado */
+}
+
+.social-icons {
+    grid-area: social-icons;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    color: #f7f7f7;
+    font-size: 1.5em;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: rgba(0,255,243,1); /* Color de icono social al pasar el cursor */
+}
+
+.footer-bottom {
+   
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #ccc;
 }
