@@ -252,6 +252,38 @@ button:hover {
     background-color: #333;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* 
 PARRAFOS QUE APARECEN CON SCROLL DOWN */
 .hidden-reveal {
@@ -329,4 +361,3 @@ PARRAFOS QUE APARECEN CON SCROLL DOWN */
     height: auto; /* Mantener la proporción de la imagen */
     box-shadow: 1rem 1rem 2rem #e0591a; /* Sombra alrededor de la imagen */
 }
-
